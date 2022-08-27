@@ -103,11 +103,16 @@ public class TelaSoma extends javax.swing.JFrame {
 
     private void btnSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaActionPerformed
      
-      
+      try{
       int n1 = Integer.parseInt(txtN1.getText());
       int n2 = Integer.parseInt(txtN2.getText());
       int s = n1 + n2;
-      lblResultado.setText(Integer.toString(s));
+      
+      lblResultado.setText(Integer.toString(s)); 
+      }
+      catch (NumberFormatException e){
+          System.out.println("Digite um valor valido");
+      }
       
     }//GEN-LAST:event_btnSomaActionPerformed
 
