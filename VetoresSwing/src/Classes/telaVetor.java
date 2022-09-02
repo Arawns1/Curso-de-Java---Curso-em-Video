@@ -177,6 +177,7 @@ public class telaVetor extends javax.swing.JFrame {
        lista.removeAllElements();
        for(int i = 0; i< vet.length; i++){
            lista.addElement(vet[i]);
+          
        }
        
        
